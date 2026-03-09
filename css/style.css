@@ -128,7 +128,7 @@ p {
 
 /* HERO */
 .hero {
-    background: url('images/hero_lg.jpg') center/cover no-repeat;
+    background: url('../images/hero_lg.jpg') center/cover no-repeat;
     height:  500px;
     background-size: cover;
     position: relative;
@@ -153,7 +153,7 @@ p {
 
 .hero-contact {
   position: relative;              
-  background-image: url('images/img_contact.jpg');
+  background-image: url('../images/img_contact.jpg');
   background-size: cover;       
   background-position: center;     
   background-repeat: no-repeat;    
@@ -167,7 +167,7 @@ p {
 .hero-about
 {
   position: relative;              
-  background-image: url('images/hero-about.jpg');
+  background-image: url('../images/hero-about.jpg');
   background-size: cover;       
   background-position: center;     
   background-repeat: no-repeat;    
