@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polaris — Home</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo-polaris.svg" alt="Polaris" class="me-2 logo" />
+        </a>
+
+        <!-- BUTTON BOURGER MENU -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- LIST MENU -->
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Accueil</a>
+            </li>
+            <!-- DROPDOWN ATVs -->
+            <li class="dropdown nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownATVs"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                QUADS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownATVs">
+                <li>
+                  <a class="dropdown-item" href="product.html">RZR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Ranger</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">General</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Sportsman</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Enfants</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="atvs.html">Voir tout</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Événements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">À propos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero-contact">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container text-center text-light">
+        <h1>Contactez-nous</h1>
+        <p>
+          Des questions ? Contactez-nous pour des renseignements commerciaux, du
+          support ou des commentaires !
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <div class="container mt-5 mb-5">
+      <h2 class="mb-4">Contactez-nous</h2>
+
+      <form>
+        <div class="row g-3">
+          <!-- Name -->
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nom complet</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Entrez votre nom complet."
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="col-md-6">
+            <label for="email" class="form-label">Adresse e-mail</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="Entrez votre adresse e-mail»"
+              required
+            />
+          </div>
+
+          <!-- Phone -->
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Numéro de téléphone</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              placeholder="
+ Téléphone : +32 XXX XXXXXXX"
+              required
+            />
+          </div>
+
+          <!-- Topic / Subject -->
+          <div class="col-md-6">
+            <label for="topic" class="form-label">Sujet</label>
+            <select class="form-select" id="topic" required>
+              <option value="">Choisissez un sujet</option>
+              <option value="sales">
+                Demande de renseignements commerciaux
+              </option>
+              <option value="technical">Support technique</option>
+              <option value="service">Service / Maintenance</option>
+              <option value="dealer">Demande auprès d’un distributeur</option>
+              <option value="feedback">
+                Retour d’expérience / Suggestions
+              </option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+
+          <!-- Model Selection -->
+          <div class="col-md-6">
+            <label for="model" class="form-label">ATV Model (optional)</label>
+            <select class="form-select" id="model">
+              <option value="">Sélectionnez un modèle</option>
+              <option value="general1000">RZR</option>
+              <option value="sport850">RANGER</option>
+              <option value="hunter570">GENERAL</option>
+              <option value="utility450">SPORTSMAN</option>
+              <option value="explorer700">ENFANTS</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="col-12">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="5"
+              placeholder="Écrivez votre message ici…"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="col-12 d-flex justify-content-end">
+            <button type="submit" class="btn btn-danger btn-lg">
+              <i class="fa-solid fa-paper-plane me-2"></i> Envoyer le message
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-4">
+    <p>&copy; 2026 Polaris.Tous droits réservés.</p>
+    <p>Email: <a href="contact.html">info@polaris.lu</a></p>
+  </footer>
+</html>

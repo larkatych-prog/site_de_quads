@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polaris — Home</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo-polaris.svg" alt="Polaris" class="me-2 logo" />
+        </a>
+
+        <!-- BUTTON BOURGER MENU -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- LIST MENU -->
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Accueil</a>
+            </li>
+            <!-- DROPDOWN ATVs -->
+            <li class="dropdown nav-item">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="dropdownATVs"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                QUADS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownATVs">
+                <li>
+                  <a class="dropdown-item" href="product.html">RZR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Ranger</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">General</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Sportsman</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="product.html">Enfants</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="atvs.html">Voir tout</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="events.html">Événements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">À propos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <!-- HERO -->
+    <section class="hero-about">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1>À propos de Polaris</h1>
+        <p class="lead">
+          Passion pour l’aventure. L’excellence à chaque trajet.
+        </p>
+      </div>
+    </section>
+
+    <!-- COMPANY MISSION -->
+    <div class="container mt-5">
+      <div class="row align-items-center g-5">
+        <div class="col-md-6">
+          <img src="images/about_us.jpg" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-md-6">
+          <h2>Notre mission</h2>
+          <p>
+            Chez Polaris, nous sommes animés par l’amour de l’aventure et la
+            quête de l’excellence. Nos VTT sont conçus pour offrir performance,
+            sécurité et fiabilité à tous les pilotes, quel que soit leur niveau.
+          </p>
+          <ul class="list-unstyled mt-3">
+            <li>
+              <i class="fa-solid fa-check text-danger me-2"></i>Des véhicules
+              durables et fiables.
+            </li>
+            <li>
+              <i class="fa-solid fa-check text-danger me-2"></i>Ingénierie et
+              technologie avancées.
+            </li>
+            <li>
+              <i class="fa-solid fa-check text-danger me-2"></i>Un support
+              client exceptionnel.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- TEAM / GALLERY -->
+    <div class="container mt-5">
+      <h2 class="mb-4 text-center">Rencontrez l’équipe</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <div class="card team-card text-center h-100">
+            <img src="images/founder_seo.jpg" class="team-img" />
+            <div class="card-body">
+              <h5 class="card-title">John Smith</h5>
+              <p class="small text-muted">Founder & CEO</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card team-card text-center h-100">
+            <img src="images/head_of_engeneering.jpg" class="team-img" />
+            <div class="card-body">
+              <h5 class="card-title">Mark Wahlberg</h5>
+              <p class="small text-muted">Head of Engineering</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card team-card text-center h-100">
+            <img src="images/design_lead.jpg" class="team-img" />
+            <div class="card-body">
+              <h5 class="card-title">Michael Brown</h5>
+              <p class="small text-muted">Design Lead</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="card team-card text-center h-100">
+            <img src="images/marketing_director.jpg" class="team-img" />
+            <div class="card-body">
+              <h5 class="card-title">Emily Davis</h5>
+              <p class="small text-muted">Marketing Director</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CTA -->
+    <div class="container mt-5 mb-5 text-center">
+      <h3>Prêt pour votre prochaine aventure ?</h3>
+      <p class="lead">
+        Découvrez nos QUADS et rejoignez dès aujourd’hui la communauté Polaris.
+      </p>
+      <a href="" class="btn btn-danger btn-lg mt-3"
+        ><i class="fa-solid fa-motorcycle me-2"></i> QUADS</a
+      >
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light text-center py-4">
+    <p>&copy; 2026 Polaris.Tous droits réservés.</p>
+    <p>Email: <a href="contact.html">info@polaris.lu</a></p>
+  </footer>
+</html>

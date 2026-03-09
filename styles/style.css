@@ -1,0 +1,193 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* GENERAL STYLES les styles pour les titres */
+
+h1 {
+    font-size: 48px;
+    color: rgb(229, 229, 233);
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    color: darkblue;
+    text-align: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* H1 */
+.card-title
+{
+    font-size: 16px;
+    color: #555555;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-family: 'Barlow', sans-serif;
+   
+}
+
+
+/* GENERAL STYLES LES STYLES POUR LES TITRES*/
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/*LES STYLES POUR LES LINK MODELES ET EVENEMENT*/
+
+
+
+.article-link {
+    text-decoration: none;
+}
+
+.article-link:hover .card-title {
+    color: #1e90ff;
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:hover .card-title {
+    color: #1e90ff;
+}
+
+
+
+
+/* NAVBAR */
+
+.navbar {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+   
+}
+
+.nav-link {
+    position: relative;
+    margin-right: 15px;
+    transition: 0.3s ease;
+}
+/* Hover underline animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #0d6efd;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+
+/* Active page */
+.nav-link.active {
+    color:  #0d6efd !important;
+}
+
+/* Shop button */
+.navbar .btn-primary {
+    padding: 6px 18px;
+    border-radius: 30px;
+}
+
+/* Сolor of logo */
+.navbar-brand {
+    color: #0d6efd; 
+}
+
+/* Сolor of hamburger menu border */
+.navbar-toggler {
+    border-color: blue; 
+    
+}
+/* Сolor of hamburger icon */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='blue' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+
+}
+
+/* LOGO */
+.logo{
+    height: 40 px; 
+    background-color: blue;
+
+}
+
+/* HERO */
+.hero {
+    background: url('/images/hero_lg.jpg') center/cover no-repeat;
+    height:  500px;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 14, 14, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    text-align: center;
+}
+
+.hero-contact {
+  position: relative;              
+  background-image: url('/images/img_contact.jpg');
+  background-size: cover;       
+  background-position: center;     
+  background-repeat: no-repeat;    
+  height: 70vh;                    
+  display: flex;                   
+  align-items: center;            
+  justify-content: center;          
+  color: white;                   
+}
+
+.hero-about
+{
+  position: relative;              
+  background-image: url('/images/hero-about.jpg');
+  background-size: cover;       
+  background-position: center;     
+  background-repeat: no-repeat;    
+  height: 70vh;                    
+  display: flex;                   
+  align-items: center;            
+  justify-content: center;          
+  color: white;                   
+}
+
+
+
+/*TEAM / GALLERY  */
+.team-img {
+  width: 150px;            
+  height: 150px;           
+  margin-top: 1rem;        
+  margin-left: auto;       
+  margin-right: auto;      
+  border-radius: 50%;      
+  object-fit: cover;       
+  display: block;          
+}
