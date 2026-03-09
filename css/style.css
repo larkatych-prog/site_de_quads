@@ -128,7 +128,7 @@ p {
 
 /* HERO */
 .hero {
-    background: url('..images/hero_lg.jpg') center/cover no-repeat;
+    background: url('images/hero_lg.jpg') center/cover no-repeat;
     height:  500px;
     background-size: cover;
     position: relative;
