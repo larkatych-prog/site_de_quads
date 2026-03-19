@@ -3,20 +3,45 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
-/* GENERAL STYLES les styles pour les titres */
+/* GENERAL STYLES POUR LES TITRES styles pour les titres */
 
 h1 {
     font-size: 48px;
     color: rgb(229, 229, 233);
-    text-align: center;
     font-family: 'Barlow', sans-serif;
 }
 
 h2 {
-    font-size: 32px;
-    color: darkblue;
-    text-align: center;
+    font-size: 38px;
+    color: rgb(7, 7, 165);    
     font-family: 'Barlow', sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    color: rgb(25, 25, 25);
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+
+h4 {
+    font-size: 24px;
+    color: rgb(25, 25, 25);;
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+h5 {
+    font-size: 19px;
+    color: rgb(25, 25, 25);;
+    font-family: 'Barlow', sans-serif;
+    
+}
+
+p {
+    margin-top: 0;      /* pas de marge en haut */
+    margin-bottom: 1rem; /*il y a une marge en bas*/
 }
 
 /* H1 */
@@ -24,43 +49,34 @@ h2 {
 {
     font-size: 16px;
     color: #555555;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-top: 15px;
+    font-weight: bold;  /*l'épaisseur de la police*/
+    text-transform: uppercase;   /*  met tout le texte en lettres majuscules*/
+    margin-top: 15px;       /* les marges externes de l'élément en haut et en bas */
     margin-bottom: 10px;
     font-family: 'Barlow', sans-serif;
+    font-weight: 600;
    
 }
 
-
-/* GENERAL STYLES LES STYLES POUR LES TITRES*/
-p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-}
-
-/*LES STYLES POUR LES LINK MODELES ET EVENEMENT*/
-
-
-
+/*LES STYLES POUR LES LINK MODELES ET EVENEMENT Accueil*/
+/*Supprime le soulignement pour les liens des événements*/
 .article-link {
     text-decoration: none;
 }
 
+/*Lorsque l'on survole le lien, changer la couleur du titre à l'intérieur*/
+
 .article-link:hover .card-title {
     color: #1e90ff;
 }
-
+/*Supprime le soulignement pour les liens des cartes*/
 .card-link {
     text-decoration: none;
 }
-
+/* Lorsque l'on survole le lien de la carte, changer la couleur du titre à l'intérieur */
 .card-link:hover .card-title {
     color: #1e90ff;
 }
-
-
-
 
 /* NAVBAR */
 
@@ -70,26 +86,43 @@ p {
    
 }
 
+/* nav-link pour a */
+/*soulignement de l’item de menu par une ligne bleue*/
 .nav-link {
     position: relative;
-    margin-right: 15px;
-    transition: 0.3s ease;
+    transition: color 0.3s ease;  /*transition douce des changements de style*/
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
 }
-/* Hover underline animation */
+
+/* animation de soulignement au survol */
 .nav-link::after {
     content: "";
     position: absolute;
     width: 0%;
     height: 2px;
-    background: #0d6efd;
+   background: #0d6efd;
     bottom: 0;
     left: 0;
-    transition: 0.3s;
+    transition: width 0.3s ease;
 }
-
+/* la ligne s’étend sur toute la largeur du lien */
 .nav-link:hover::after {
     width: 100%;
-    transition: 0.3s;
+   
+}
+/* pour que le texte et la flèche  soient correctement alignés */
+.nav-link.dropdown-toggle {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding-right: 0.5rem;
+ 
+}
+/* icône la flèche  */
+.nav-link .dropdown-icon {
+  pointer-events: none; /* le clic sur la flèche ne bloque pas le lien */
+  transform: scale(1.2);
 }
 
 /* Active page */
@@ -110,7 +143,7 @@ p {
 
 /* Сolor of hamburger menu border */
 .navbar-toggler {
-    border-color: blue; 
+    border-color: #0d6efd; 
     
 }
 /* Сolor of hamburger icon */
@@ -121,39 +154,42 @@ p {
 
 /* LOGO */
 .logo{
-    height: 40 px; 
-    background-color: blue;
+    height: 30px; 
+    background-color: #0d6efd;
 
 }
 
 /* HERO */
 .hero {
-    background: url('../images/hero_lg.jpg') center/cover no-repeat;
-    height:  500px;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
+ position: relative;
+ width: 100%;
+ height: 700px; 
+ overflow: hidden; /* masque les débordements */
+   
 
+
+}
+/*calque sombre semi-transparent*/
 .hero-overlay {
-    position: absolute;
-    top: 0;
+    position: absolute; /* position absolue pour couvrir entièrement le parent */
+    top: 0;             /* placer en haut du parent */
+    left: 0;            /* placer à gauche du parent */
+    height: 100%;       /* hauteur = hauteur du parent */
     width: 100%;
-    height: 100%;
-    background: rgba(15, 14, 14, 0.5);
+    background: rgba(15, 14, 14, 0.5); /* fond semi-transparent (noir avec 50% d'opacité) */
 }
 
+/* contenu (texte) */
 .hero-content {
-    position: relative;
-    text-align: center;
+  position: relative; /* Permet de positionner des éléments enfants absolument par rapport à ce conteneur */
+  z-index: 2;         /* Définit la superposition : cet élément sera au-dessus des éléments avec un z-index plus faible */
+  color: white;       /* La couleur du texte à l'intérieur sera blanche */
+  text-align: center; /* Centre le texte horizontalement à l'intérieur du conteneur */
 }
 
-.hero-contact {
+
+.hero-bg {
   position: relative;              
-  background-image: url('../images/img_contact.jpg');
   background-size: cover;       
   background-position: center;     
   background-repeat: no-repeat;    
@@ -161,21 +197,21 @@ p {
   display: flex;                   
   align-items: center;            
   justify-content: center;          
-  color: white;                   
+  color: white; 
 }
 
-.hero-about
-{
-  position: relative;              
-  background-image: url('../images/hero-about.jpg');
-  background-size: cover;       
-  background-position: center;     
-  background-repeat: no-repeat;    
-  height: 70vh;                    
-  display: flex;                   
-  align-items: center;            
-  justify-content: center;          
-  color: white;                   
+/* GALLERY/EVENEMENTS  */
+.event-gallery img {
+  transition: transform 0.3s;
+}
+
+.event-gallery img:hover {
+  transform: scale(1.05);
+}
+
+
+.models {
+  background-color: #FFFFFF;
 }
 
 
@@ -191,3 +227,372 @@ p {
   object-fit: cover;       
   display: block;          
 }
+
+
+
+/*BOUTON EVENEMENTS  */
+.event-btn.active {
+  background-color: #0d6efd;
+  color: white;
+  border-color: #0d6efd;
+}
+
+
+/* Hide dropdown by default */
+.dropdown-menu {
+  display: none;
+}
+
+/* Show dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+
+.img-event {
+  margin-left: 13px;
+}
+
+.carousel-item > div > img{
+    max-height:220px;
+}
+
+/* VIDÉO EN FOND */
+.video-bg iframe {
+  position: absolute; /* position absolue pour centrer le iframe dans son conteneur */
+  top: 50%;   /* position verticale au milieu */
+  left: 50%;  /* position horizontale au milieu */
+
+  width: 100vw; /* largeur = largeur de la fenêtre */
+  height: 100vh; /* hauteur = hauteur de la fenêtre */
+
+  object-fit: cover; /* redimensionner la vidéo pour couvrir tout l'espace sans déformation */
+ 
+  transform: translate(-50%, -50%); /* décalage pour centrer exactement */
+  pointer-events: none; /* désactive les interactions avec la vidéo */
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+/* ====== MAIN IMAGE ET TEXTE ====== */
+.event-main-img {
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.main-event-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.event-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.event-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ====== GALERIE ====== */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ====== PROGRAMME ET DÉTAILS ====== */
+.event-details h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+}
+
+.event-details p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.programme-list {
+  list-style: disc inside;
+  margin-bottom: 1.5rem;
+  padding-left: 0;
+}
+
+.programme-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .event-main-img {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .event-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .event-text p {
+    text-align: justify;
+  }
+}
+
+/* Taille des images */
+.carousel-item img {
+  width: 25%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Boutons-flèches sous forme de cercle */
+.custom-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #007bff;
+  border: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.custom-btn:hover {
+  opacity: 1;
+}
+
+.carousel-control-prev.custom-btn {
+  left: -20px;
+}
+
+.carousel-control-next.custom-btn {
+  right: -20px;
+}
+
+.custom-btn .fas {
+  font-size: 1rem;
+}
+
+
+
+
+
+  .event-date {
+ font-weight: bold;         
+  color: #007bff;             
+  font-size: 1.2rem;          
+  margin-bottom: 1rem;       
+  text-transform: uppercase; 
+   
+}
+
+
+/* On aligne le texte joliment.*/
+.programme-list li span.flex-grow-1 {
+  display: block;
+  line-height: 1.5;
+}
+
+/* On justifie le texte.*/
+.text-justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Responsivité : réduire les marges sur les appareils mobiles.*/
+@media (max-width: 768px) {
+  .programme-list li {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* Style pour le texte indiquant la localisation*/
+.text-location {
+  font-size: 1.50rem;    /* Taille de texte augmentée */
+  font-weight: 500;      /* Légèrement plus gras */
+  display: flex;         /* Icône et texte sur la même ligne */
+  align-items: center;   /* Alignement vertical de l'icône avec le texte */
+  line-height: 1.6;      /* Interligne */
+  color: #007bff;        /* Couleur du texte bleu (optionnel) */
+}
+
+
+/* Faire en sorte que les images aient la même hauteur et couper le surplus */
+.img-cover {
+  height: 220px;         /* même hauteur pour toutes les images */
+  object-fit: cover;     /* couper l'image tout en conservant les proportions */
+  width: 100%;           /* s'étendre sur toute la largeur de la carte */
+  border-top-left-radius: 0.25rem; 
+  border-top-right-radius: 0.25rem;
+}
+
+
+
+
+/* PRODUCT CARD EFFECT */
+.product-card {
+    transition: 0.4s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05) rotate(1deg) translateY(-5px);
+}
+
+/* BUTTON primary et secondary TRANSITION */
+.btn-primary, .btn-secondary {
+    transition: 0.3s ease;           /*  animation fluide*/
+}
+
+.btn-primary:hover {
+    transform: scale(1.1);
+}
+
+.btn-secondary:hover {
+    transform: scale(1.05);
+}
+
+/* GALLERY */
+.gallery img {
+    transition: 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* PRICE STYLE */
+.old-price {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.new-price {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.pricefornewcol {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SALE BADGE */
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 20px;
+    z-index: 10;
+}
+
+/* CARD IMAGE POSITION */
+.card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-img-wrapper img {
+    transition: 0.4s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+
+/* ARTICLE STYLE */
+.article-card {
+    transition: 0.3s ease;
+}
+
+.article-card:hover {
+    transform: translateY(-8px);
+}
+
+
+/* ACCORDION STYLE */
+
+.custom-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #ddd;
+}
+/* Style des boutons de l'accordéon */
+.custom-accordion .accordion-button {
+    background: white;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 20px;
+}
+/* Bouton ouvert */
+
+.custom-accordion .accordion-button:not(.collapsed) {
+    background: #f8f9fa;
+    color: rgb(7, 7, 165);
+}
+
+/* Icône plus personnalisée */
+.custom-accordion .accordion-button::after {
+    background-image: none;
+    content: "+";
+    font-size: 22px;
+    font-weight: bold;
+    transform: rotate(0deg);
+}
+/* Lorsque l'accordéon est ouvert, changer le "+" en "–" */
+.custom-accordion .accordion-button:not(.collapsed)::after {
+    content: "–";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
