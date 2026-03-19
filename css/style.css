@@ -585,9 +585,30 @@ p {
 }
 
 
+/* FOOTER */
 
+.footer-logo {
+    width: 150px;       
+    filter: brightness(0) invert(1); /* blanc */
+}
+footer a {
+    text-decoration: none;
+}
 
+footer a:hover {
+    text-decoration: underline;
+   
+    }
 
+footer a i {
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer a:hover i {
+    color: #0d6efd;
+
+}
 
 
 
