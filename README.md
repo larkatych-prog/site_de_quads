@@ -1,97 +1,144 @@
-Description du projet
+Description
 
-Le site Polaris est un site de présentation d’entreprise dédié aux quads et aux modèles proposés par la société. Le projet est encore en développement : de nombreuses fonctionnalités doivent être améliorées ou complétées.
+Polaris est un projet web de type vitrine développé dans un cadre d’apprentissage.
 
-Actuellement, le site comprend 7 pages principales :
+Le site présente une entreprise spécialisée dans les quads, ses modèles ainsi que les événements organisés pour les passionnés de véhicules tout-terrain.
 
-Accueil
+Les utilisateurs peuvent :
 
-QUADS
+découvrir les modèles de quads (nouveautés et promotions)
 
-Événement
+consulter les événements passés et à venir
 
-À propos
+filtrer les événements par catégorie (en cours de développement)
 
-Contactez-nous
+envoyer une demande de participation à un événement
 
-Fonctionnalités par page
+contacter l’entreprise via un formulaire
 
-Accueil
+ Démo
 
-Présente un vidéo en hero avec des quads.
+🔗 GitHub :
+https://github.com/larkatych-prog/site_de_quads
 
-Affiche les modèles de quads ainsi que les événements organisés par l’entreprise.
+Fonctionnalités principales
 
-QUADS
+Hero avec vidéo (page d’accueil)
 
-Liste des quads en promotion ainsi que des nouveaux modèles.
+Catalogue de quads (promotions + nouveaux modèles)
 
-Événement
+Liste des événements :
 
-Filtrage des événements selon trois catégories :
+affichage par mois (accordion)
+
+tri chronologique (plus récent en premier)
+
+Filtrage des événements (en cours de développement) :
 
 Tous les événements
 
-Événement Benelux
+Benelux
 
-Événement international
+International
 
-Liste des événements passés et futurs organisée par accordéon, affichée par mois.
+Pages d’articles pour événements :
 
-Le dernier événement apparaît en haut de la liste.
+description
 
-Chaque événement possède des liens vers des articles détaillés.
+carrousel d’images
 
-Actuellement, 2 articles sur des événements sont disponibles.
+navigation vers événements précédents
 
-Chaque article présente :
+Formulaire de contact
 
-Brève description de l’événement
+Navigation avec sous-menu (QUADS)
 
-Сarrousel de photos
+Design responsive
 
-Possibilité de soumettre une demande de participation
+Structure du site
 
-Affichage de 3 événements précédents pour navigation rapide
+Accueil : vidéo + mise en avant des modèles et événements
 
-À propos
+QUADS : promotions et nouveaux modèles
 
-Informations sur l’entreprise et l’équipe.
+Événements : liste filtrable + organisation par mois
 
-Bouton de navigation rapide vers les modèles de quads.
+Articles : détails des événements
 
-Contactez-nous
+À propos : présentation de l’entreprise
 
-Formulaire pour contacter l’entreprise.
-
-Structure commune du site
-
-Logo de l’entreprise avec un menu de navigation de 5 éléments, où QUADS dispose d’un sous-menu.
-
-Section hero avec des images différentes sur chaque page (sauf Accueil, où il y a une vidéo).
-
-Contenu principal : textes, images, listes, formulaires, accordéons.
-
-Footer :
-
-Logo de l’entreprise cliquable renvoyant à la page d’accueil
-
-Adresse e-mail avec lien vers le formulaire de contact
-
-Boutons pour accéder aux réseaux sociaux
+Contact : formulaire
 
 Technologies utilisées
 
-Bootstrap pour la mise en page et la grille responsive.
+HTML5
 
-CSS personnalisé dans style.css pour les styles spécifiques.
+CSS3
 
-Images et médias organisés dans le dossier image.
+Bootstrap (responsive design)
 
-État actuel du projet
+Font Awesome (icônes)
 
-7 pages créées et partiellement fonctionnelles.
+Mon rôle
 
-Certaines fonctionnalités doivent encore être développées ou optimisées.
+Projet réalisé individuellement.
 
-Le site est responsive et compatible avec différents écrans grâce à Bootstrap.
+J’ai pris en charge :
+
+la conception de la structure du site
+
+le développement des pages
+
+la mise en page (HTML/CSS)
+
+l’intégration Bootstrap
+
+le responsive design
+
+la logique d’affichage (sans JavaScript)
+
+la création des formulaires
+
+Ce projet met en valeur plusieurs éléments intéressants:
+
+Intégration d’une vidéo en section hero (page d’accueil)
+Une vidéo immersive est utilisée dès l’arrivée sur le site pour capter l’attention de l’utilisateur et refléter l’univers dynamique des quads.
+
+Cartes interactives des quads (page QUADS)
+Les modèles sont présentés sous forme de cartes avec des effets visuels et animations, améliorant l’expérience utilisateur et la lisibilité du catalogue.
+
+Affichage des événements avec un accordion (page Événements)
+Les événements sont organisés par mois grâce à un système d’accordéon, permettant une navigation claire et structurée dans le temps.
+
+Système de filtrage des événements (en cours de développement)
+Une logique de tri par catégories (Tous, Benelux, International) est prévue pour faciliter la recherche et améliorer l’ergonomie.
+
+Page de détail d’événement riche
+Chaque événement dispose de :
+
+une galerie d’images (carrousel)
+
+une description
+
+un formulaire de participation
+→ ce qui crée une expérience complète et interactive
+
+Formulaires utilisateurs
+
+formulaire de participation aux événements
+
+formulaire de contact
+→ permettant une interaction directe entre l’utilisateur et l’entreprise
+
+Améliorations prévues
+implémentation complète du filtrage des événements
+ajout de pages dynamiques pour chaque modèle de quad
+amélioration du sous-menu QUADS (navigation par catégorie)
+mise en place d’un backend pour :
+gérer les formulaires
+stocker les données
+optimisation UX/UI
+
+Statut
+
+Projet en cours de développement
