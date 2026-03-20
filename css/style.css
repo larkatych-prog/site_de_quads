@@ -111,14 +111,7 @@ p {
     width: 100%;
    
 }
-/* pour que le texte et la flèche  soient correctement alignés */
-.nav-link.dropdown-toggle {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding-right: 0.5rem;
- 
-}
+
 /* icône la flèche  */
 .nav-link .dropdown-icon {
   pointer-events: none; /* le clic sur la flèche ne bloque pas le lien */
@@ -258,6 +251,7 @@ p {
 }
 
 /* VIDÉO EN FOND */
+
 .video-bg iframe {
   position: absolute; /* position absolue pour centrer le iframe dans son conteneur */
   top: 50%;   /* position verticale au milieu */
@@ -265,19 +259,8 @@ p {
 
   width: 100vw; /* largeur = largeur de la fenêtre */
   height: 100vh; /* hauteur = hauteur de la fenêtre */
-
-  object-fit: cover; /* redimensionner la vidéo pour couvrir tout l'espace sans déformation */
- 
   transform: translate(-50%, -50%); /* décalage pour centrer exactement */
   pointer-events: none; /* désactive les interactions avec la vidéo */
-}
-
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  max-width: 960px;
-  margin: auto;
-  overflow: hidden;
 }
 
 
@@ -304,23 +287,6 @@ p {
   line-height: 1.6;
 }
 
-/* ====== GALERIE ====== */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-}
-
-.gallery-img {
-  width: 100%;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-}
-
-.gallery-img:hover {
-  transform: scale(1.05);
-  cursor: pointer;
-}
 
 /* ====== PROGRAMME ET DÉTAILS ====== */
 .event-details h2 {
@@ -347,12 +313,7 @@ p {
   font-size: 1.05rem;
 }
 
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  .event-main-img {
-    flex-direction: column;
-    text-align: center;
-  }
+
 
   .event-text h2 {
     font-size: 1.5rem;
@@ -371,7 +332,7 @@ p {
   border-radius: 10px;
 }
 
-/* Boutons-flèches sous forme de cercle */
+/* Boutons-flèches sous forme de cercle carrusel */
 .custom-btn {
   position: absolute;
   top: 50%;
@@ -460,9 +421,6 @@ p {
   border-top-right-radius: 0.25rem;
 }
 
-
-
-
 /* PRODUCT CARD EFFECT */
 .product-card {
     transition: 0.4s ease;
@@ -485,14 +443,6 @@ p {
     transform: scale(1.05);
 }
 
-/* GALLERY */
-.gallery img {
-    transition: 0.3s ease;
-}
-
-.gallery img:hover {
-    transform: scale(1.05);
-}
 
 /* PRICE STYLE */
 .old-price {
@@ -541,50 +491,6 @@ p {
 }
 
 
-/* ARTICLE STYLE */
-.article-card {
-    transition: 0.3s ease;
-}
-
-.article-card:hover {
-    transform: translateY(-8px);
-}
-
-
-/* ACCORDION STYLE */
-
-.custom-accordion .accordion-item {
-    border: none;
-    border-bottom: 1px solid #ddd;
-}
-/* Style des boutons de l'accordéon */
-.custom-accordion .accordion-button {
-    background: white;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 20px;
-}
-/* Bouton ouvert */
-
-.custom-accordion .accordion-button:not(.collapsed) {
-    background: #f8f9fa;
-    color: rgb(7, 7, 165);
-}
-
-/* Icône plus personnalisée */
-.custom-accordion .accordion-button::after {
-    background-image: none;
-    content: "+";
-    font-size: 22px;
-    font-weight: bold;
-    transform: rotate(0deg);
-}
-/* Lorsque l'accordéon est ouvert, changer le "+" en "–" */
-.custom-accordion .accordion-button:not(.collapsed)::after {
-    content: "–";
-}
-
-
 /* FOOTER */
 
 .footer-logo {
@@ -616,8 +522,25 @@ footer a:hover i {
 
 }
 
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .event-main-img {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 
+/* Tablettes et mobiles */
+@media (max-width: 600px) {
+
+.hero{
+  height: 300px;
+}
+
+
+
+}
 
 
 
