@@ -187,6 +187,7 @@
           <span class="text-primary me-2">✔</span>
           <span class="flex-grow-1 text-justify">
             Connu sous le nom de « Dakar de l'Europe »
+          </span>
         </li>
         <li class="d-flex align-items-start mb-2">
           <span class="text-primary me-2">✔</span>
@@ -220,7 +221,6 @@
 
 
 
-  </div>
   <!-- FORMULAIRE D'INSCRIPTION -->
   <section class="registration py-5 bg-light">
     <div class="container">
@@ -262,6 +262,7 @@
           <div class="col-md-6">
             <label for="passager" class="form-label">Passager</label>
             <select class="form-select" id="passager" required>
+              <option value="non">Sélectionnez si vous avez un passager</option>
               <option value="non">Non</option>
               <option value="oui">Avec passager, coût supplémentaire de 385,00 €</option>
             </select>
@@ -269,6 +270,7 @@
           <div class="col-md-6">
             <label for="hebergement" class="form-label">Hébergement</label>
             <select class="form-select" id="hebergement" required>
+              <option value="tente">Sélectionnez votre hébergement</option>
               <option value="tente">Votre propre tente/camping-car/caravane</option>
               <option value="contact">Je souhaite que 4WD-travel me contacte concernant l'hébergement</option>
             </select>
@@ -287,7 +289,7 @@
     <div class="container">
 
       <!-- Titre de la section -->
-      <h3 class="mt-5 mb-4 text-center">Autres événements</h3>
+      <h2 class="mt-5 mb-4 text-center">Autres événements</h2>
 
       <!-- Grille des événements -->
       <div class="row g-4">
@@ -298,10 +300,10 @@
             <div class="card-body d-flex flex-column">
               <!-- Titre comme lien -->
               <a href="voyage_hors_route.html" class="article-link">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Événement KUIJERS QUADS
                   <span class="arrow ms-2">»</span>
-                </h5>
+                </h3>
               </a>
               <p class="card-text mt-auto text-muted">Polaris présente la dernière version du RZR avec des performances
                 améliorées et de
@@ -317,10 +319,10 @@
             <div class="card-body d-flex flex-column">
 
               <a href="#" class="article-link">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Balade printanière dans le désert — 15 février (International).
                   <span class="arrow ms-2">»</span>
-                </h5>
+                </h3>
 
               </a>
 
@@ -336,22 +338,19 @@
             <div class="card-body d-flex flex-column">
 
               <a href="#" class="article-link">
-                <h5 class="card-title">
+                <h3 class="card-title">
                   Défi tout-terrain — 20 janvier.
                   <span class="arrow ms-2">»</span>
-                </h5>
+                </h3>
               </a>
 
               <p class="card-text mt-auto text-muted">Explorez les nouveautés Polaris et rejoignez l'aventure.</p>
             </div>
           </div>
         </div>
-      </div> <!-- fini row-->
 
-    </div> <!-- fini container -->
-  </section>
-  </div>
-  </div>
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
