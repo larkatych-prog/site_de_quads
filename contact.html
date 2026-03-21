@@ -89,77 +89,86 @@
     </div>
   </section>
 
-  <!-- CONTACT FORM -->
+  <!-- FORMULAIRE DE CONTACT -->
   <div class="container mt-5 mb-5">
     <h2 class="mb-4">Contactez-nous</h2>
 
-    <form>
-      <div class="row g-3">
-        <!-- Name -->
-        <div class="col-md-6">
-          <label for="name" class="form-label">Nom complet</label>
-          <input type="text" class="form-control" id="name" placeholder="Entrez votre nom complet." required />
-        </div>
+    <!-- Formulaire avec validation Bootstrap 5 -->
+    <form class="row g-3 needs-validation" novalidate id="contactForm">
+      <!-- Nom complet -->
+      <div class="col-md-6">
+        <label for="name" class="form-label">Nom complet</label>
+        <input type="text" class="form-control" id="name" placeholder="Entrez votre nom complet" required>
+        <div class="invalid-feedback">Veuillez saisir votre nom complet.</div> <!-- Message d'erreur si vide -->
+      </div>
 
-        <!-- Email -->
-        <div class="col-md-6">
-          <label for="email" class="form-label">Adresse e-mail</label>
-          <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail" required />
-        </div>
+      <!-- Adresse e-mail -->
+      <div class="col-md-6">
+        <label for="email" class="form-label">Adresse e-mail</label>
+        <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail" required>
+        <div class="invalid-feedback">Veuillez saisir une adresse @ valide.</div>
+        <!-- Message d'erreur si invalide -->
+      </div>
 
-        <!-- Phone -->
-        <div class="col-md-6">
-          <label for="phone" class="form-label">Numéro de téléphone</label>
-          <input type="tel" class="form-control" id="phone" placeholder="Téléphone : +32 XXX XXXXXXX" required />
-        </div>
+      <!-- Numéro de téléphone -->
+      <div class="col-md-6">
+        <label for="phone" class="form-label">Numéro de téléphone</label>
+        <input type="tel" class="form-control" id="phone" placeholder="+32 XXX XXXXXXX" required>
+        <div class="invalid-feedback">Veuillez saisir un numéro de téléphone valide.</div>
+      </div>
 
-        <!-- Topic / Subject -->
-        <div class="col-md-6">
-          <label for="topic" class="form-label">Sujet</label>
-          <select class="form-select" id="topic" required>
-            <option value="">Choisissez un sujet</option>
-            <option value="sales">
-              Demande de renseignements commerciaux
-            </option>
-            <option value="technical">Support technique</option>
-            <option value="service">Service / Maintenance</option>
-            <option value="dealer">Demande auprès d’un distributeur</option>
-            <option value="feedback">
-              Retour d’expérience / Suggestions
-            </option>
-            <option value="other">Autre</option>
-          </select>
-        </div>
+      <!-- Sujet -->
+      <div class="col-md-6">
+        <label for="topic" class="form-label">Sujet</label>
+        <select class="form-select" id="topic" required>
+          <option value="" disabled selected>Choisissez un sujet</option>
+          <option value="sales">Demande de renseignements commerciaux</option>
+          <option value="technical">Support technique</option>
+          <option value="service">Service / Maintenance</option>
+          <option value="dealer">Demande auprès d’un distributeur</option>
+          <option value="feedback">Retour d’expérience / Suggestions</option>
+          <option value="other">Autre</option>
+        </select>
+        <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
+      </div>
 
-        <!-- Model Selection -->
-        <div class="col-md-6">
-          <label for="model" class="form-label">ATV Model (optional)</label>
-          <select class="form-select" id="model">
-            <option value="">Sélectionnez un modèle</option>
-            <option value="general1000">RZR</option>
-            <option value="sport850">RANGER</option>
-            <option value="hunter570">GENERAL</option>
-            <option value="utility450">SPORTSMAN</option>
-            <option value="explorer700">ENFANTS</option>
-          </select>
-        </div>
+      <!-- Modèle ATV (optionnel) -->
+      <div class="col-md-6">
+        <label for="model" class="form-label">ATV Model (optionnel)</label>
+        <select class="form-select" id="model">
+          <option value="">Sélectionnez un modèle</option>
+          <option value="general1000">RZR</option>
+          <option value="sport850">RANGER</option>
+          <option value="hunter570">GENERAL</option>
+          <option value="utility450">SPORTSMAN</option>
+          <option value="explorer700">ENFANTS</option>
+        </select>
+      </div>
 
-        <!-- Message -->
-        <div class="col-12">
-          <label for="message" class="form-label">Message</label>
-          <textarea class="form-control" id="message" rows="5" placeholder="Écrivez votre message ici…"
-            required></textarea>
-        </div>
+      <!-- Message -->
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="5" placeholder="Écrivez votre message ici…"
+          required></textarea>
+        <div class="invalid-feedback">Veuillez écrire votre message.</div>
+      </div>
 
-        <!-- Submit Button -->
-        <div class="col-12 d-flex justify-content-end">
-          <button type="submit" class="btn btn-primary btn-lg">
-            <i class="fa-solid fa-paper-plane me-2"></i> Envoyer le message
-          </button>
+      <!-- Bouton Envoyer -->
+      <div class="col-12 d-flex justify-content-center mt-4">
+        <button type="submit" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-paper-plane me-2"></i> Envoyer le message
+        </button>
+      </div>
+
+      <!-- Message de succès -->
+      <div class="col-12 mt-3">
+        <div id="successMessage" class="alert alert-success d-none" role="alert">
+          Merci ! Votre message a été envoyé avec succès.
         </div>
       </div>
     </form>
   </div>
+
 
 
   <!-- FOOTER -->
@@ -186,6 +195,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/form_validation.js"></script>
 </body>
 
 

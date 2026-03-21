@@ -226,31 +226,44 @@
     <div class="container">
       <h2 class="mb-4 text-center">Inscrivez-vous à l'événement</h2>
 
-      <div class="row g-3">
+      <!-- Форма с валидацией Bootstrap -->
+      <form class="row g-3 needs-validation" novalidate>
         <div class="col-md-6">
           <label for="nom" class="form-label">Nom</label>
           <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+          <div class="invalid-feedback">Veuillez saisir votre nom.</div>
         </div>
+
         <div class="col-md-6">
           <label for="adresse" class="form-label">Adresse</label>
           <input type="text" class="form-control" id="adresse" placeholder="Votre adresse" required>
+          <div class="invalid-feedback">Veuillez saisir votre adresse.</div>
         </div>
+
         <div class="col-md-4">
           <label for="codepostal" class="form-label">Code postal</label>
           <input type="text" class="form-control" id="codepostal" required>
+          <div class="invalid-feedback">Veuillez saisir votre code postal.</div>
         </div>
+
         <div class="col-md-4">
           <label for="ville" class="form-label">Lieu</label>
           <input type="text" class="form-control" id="ville" required>
+          <div class="invalid-feedback">Veuillez saisir votre ville.</div>
         </div>
+
         <div class="col-md-4">
           <label for="phone" class="form-label">Numéro de téléphone</label>
-          <input type="tel" class="form-control" id="phone" required>
+          <input type="tel" class="form-control" id="phone" placeholder="+32 XXX XXXXXXX" required>
+          <div class="invalid-feedback">Veuillez saisir un numéro de téléphone valide.</div>
         </div>
+
         <div class="col-md-6">
           <label for="email" class="form-label">Adresse courriel</label>
-          <input type="email" class="form-control" id="email" required>
+          <input type="email" class="form-control" id="email" placeholder="exemple@mail.com" required>
+          <div class="invalid-feedback">Veuillez saisir une adresse email valide.</div>
         </div>
+
         <div class="col-md-6">
           <label for="vehicule" class="form-label">Véhicule</label>
           <select class="form-select" id="vehicule" required>
@@ -258,7 +271,9 @@
             <option value="quad">Quad, 785 €</option>
             <option value="poussette">Poussette, 785 €</option>
           </select>
+          <div class="invalid-feedback">Veuillez sélectionner un véhicule.</div>
         </div>
+
         <div class="col-md-6">
           <label for="passager" class="form-label">Passager</label>
           <select class="form-select" id="passager" required>
@@ -266,7 +281,9 @@
             <option value="non">Non</option>
             <option value="oui">Avec passager, coût supplémentaire de 385,00 €</option>
           </select>
+          <div class="invalid-feedback">Veuillez sélectionner si vous avez un passager.</div>
         </div>
+
         <div class="col-md-6">
           <label for="hebergement" class="form-label">Hébergement</label>
           <select class="form-select" id="hebergement" required>
@@ -274,17 +291,21 @@
             <option value="tente">Votre propre tente/camping-car/caravane</option>
             <option value="contact">Je souhaite que 4WD-travel me contacte concernant l'hébergement</option>
           </select>
+          <div class="invalid-feedback">Veuillez sélectionner votre hébergement.</div>
         </div>
-      </div>
+
+
+        <div class="col-12 d-flex justify-content-end mt-4">
+          <button type="submit" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-paper-plane me-2"></i> S'inscrire
+          </button>
+        </div>
+      </form>
     </div>
-    <div class="col-12 d-flex justify-content-end">
-      <button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-paper-plane me-2"></i>
-        S'inscrire</button>
-    </div>
-
-
-
   </section>
+
+
+
 
   <!-- Autres événements -->
   <section class="py-5">
@@ -379,7 +400,7 @@
       </a>
     </div>
   </footer>
-
+  <script src="js/form_validation.js"></script>
 </body>
 
 </html>
