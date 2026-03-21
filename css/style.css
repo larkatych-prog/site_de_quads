@@ -538,11 +538,16 @@ footer a:hover i {
   height: 300px;
 }
 
-
-
 }
 
 
+/*navigation au clavier*/
+a:focus,
+button:focus,
+input:focus {
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
+}
 
 
 
