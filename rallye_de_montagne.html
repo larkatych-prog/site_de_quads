@@ -225,66 +225,66 @@
   <section class="registration py-5 bg-light">
     <div class="container">
       <h2 class="mb-4 text-center">Inscrivez-vous à l'événement</h2>
-      <form>
+
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="nom" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
+        </div>
+        <div class="col-md-6">
+          <label for="adresse" class="form-label">Adresse</label>
+          <input type="text" class="form-control" id="adresse" placeholder="Votre adresse" required>
+        </div>
+        <div class="col-md-4">
+          <label for="codepostal" class="form-label">Code postal</label>
+          <input type="text" class="form-control" id="codepostal" required>
+        </div>
+        <div class="col-md-4">
+          <label for="ville" class="form-label">Lieu</label>
+          <input type="text" class="form-control" id="ville" required>
+        </div>
+        <div class="col-md-4">
+          <label for="phone" class="form-label">Numéro de téléphone</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Adresse courriel</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-md-6">
+          <label for="vehicule" class="form-label">Véhicule</label>
+          <select class="form-select" id="vehicule" required>
+            <option value="" disabled selected>Sélectionnez votre véhicule</option>
+            <option value="quad">Quad, 785 €</option>
+            <option value="poussette">Poussette, 785 €</option>
+          </select>
+        </div>
         <div class="row g-3">
           <div class="col-md-6">
-            <label for="nom" class="form-label">Nom</label>
-            <input type="text" class="form-control" id="nom" placeholder="Votre nom" required>
-          </div>
-          <div class="col-md-6">
-            <label for="adresse" class="form-label">Adresse</label>
-            <input type="text" class="form-control" id="adresse" placeholder="Votre adresse" required>
-          </div>
-          <div class="col-md-4">
-            <label for="codepostal" class="form-label">Code postal</label>
-            <input type="text" class="form-control" id="codepostal" required>
-          </div>
-          <div class="col-md-4">
-            <label for="ville" class="form-label">Lieu</label>
-            <input type="text" class="form-control" id="ville" required>
-          </div>
-          <div class="col-md-4">
-            <label for="phone" class="form-label">Numéro de téléphone</label>
-            <input type="tel" class="form-control" id="phone" required>
-          </div>
-          <div class="col-md-6">
-            <label for="email" class="form-label">Adresse courriel</label>
-            <input type="email" class="form-control" id="email" required>
-          </div>
-          <div class="col-md-6">
-            <label for="vehicule" class="form-label">Véhicule</label>
-            <select class="form-select" id="vehicule" required>
-              <option value="" disabled selected>Sélectionnez votre véhicule</option>
-              <option value="quad">Quad, 785 €</option>
-              <option value="poussette">Poussette, 785 €</option>
+            <label for="passager" class="form-label">Passager</label>
+            <select class="form-select" id="passager" required>
+              <option value="" disabled selected>Sélectionnez si vous avez un passager</option>
+              <option value="non">Non</option>
+              <option value="oui">Avec passager, coût supplémentaire de 385,00 €</option>
             </select>
           </div>
-          <div class="row g-3">
-            <div class="col-md-6">
-              <label for="passager" class="form-label">Passager</label>
-              <select class="form-select" id="passager" required>
-                <option value="" disabled selected>Sélectionnez si vous avez un passager</option>
-                <option value="non">Non</option>
-                <option value="oui">Avec passager, coût supplémentaire de 385,00 €</option>
-              </select>
-            </div>
-            <div class="col-md-6">
-              <label for="hebergement" class="form-label">Hébergement</label>
-              <select class="form-select" id="hebergement" required>
-                <option value="" disabled selected>Sélectionnez votre hébergement</option>
-                <option value="tente">Votre propre tente/camping-car/caravane</option>
-                <option value="contact">Je souhaite que 4WD-travel me contacte concernant l'hébergement</option>
-              </select>
-            </div>
+          <div class="col-md-6">
+            <label for="hebergement" class="form-label">Hébergement</label>
+            <select class="form-select" id="hebergement" required>
+              <option value="" disabled selected>Sélectionnez votre hébergement</option>
+              <option value="tente">Votre propre tente/camping-car/caravane</option>
+              <option value="contact">Je souhaite que 4WD-travel me contacte concernant l'hébergement</option>
+            </select>
           </div>
         </div>
-        <div class="col-12 d-flex justify-content-end">
-          <button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-paper-plane me-2"></i>
-            S'inscrire</button>
-        </div>
-    </div>
-    </form>
-    </div>
+      </div>
+      <div class="col-12 d-flex justify-content-end">
+        <button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-paper-plane me-2"></i>
+          S'inscrire</button>
+      </div>
+
+
+
   </section>
 
   <!-- Autres événements -->
