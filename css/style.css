@@ -393,13 +393,7 @@ p {
   text-justify: inter-word;
 }
 
-/* Responsivité : réduire les marges sur les appareils mobiles.*/
-@media (max-width: 768px) {
-  .programme-list li {
-    flex-direction: row;
-    align-items: flex-start;
-  }
-}
+
 
 /* Style pour le texte indiquant la localisation*/
 .text-location {
@@ -538,6 +532,14 @@ footer a:hover i {
   height: 300px;
 }
 
+}
+
+/* Responsivité : réduire les marges sur les appareils mobiles.*/
+@media (max-width: 768px) {
+  .programme-list li {
+    flex-direction: row;
+    align-items: flex-start;
+  }
 }
 
 
