@@ -15,160 +15,162 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="images/logo-polaris.svg" alt="Polaris" class="me-2 logo" />
-      </a>
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo-polaris.svg" alt="Polaris" class="me-2 logo" />
+        </a>
 
-      <!-- BUTTON BOURGER MENU -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <!-- LIST MENU -->
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item dropdown">
-            <a class="nav-link me-4 " href="index.html">Accueil</a>
-          </li>
-          <!-- DROPDOWN ATVs -->
-          <li class="index.html">
-            <a class="nav-link me-4" href="#" id="dropdownATVs" role="button" aria-expanded="false">
-              <span class="dropdown-icon me-2">▼</span>
-              QUADS
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownATVs">
-              <li>
-                <a class="dropdown-item" href="#">RZR</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Ranger</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">General</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Sportsman</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Enfants</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="atvs.html">Voir tout</a>
-              </li>
-            </ul>
-          </li>
-
-
-          <li class="nav-item">
-            <a class="nav-link me-4" href="events.html">Événements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link me-4" href="about.html">À propos</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link me-4 active" href="contact.html">Contactez-nous</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- HERO -->
-  <section class="hero-bg" style="background-image: url('images/img_contact.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container text-center text-light">
-      <h1 class="mb-3">Contactez-nous</h1>
-      <p class="mb-4">
-        Des questions ? Contactez-nous pour des renseignements commerciaux, du
-        support ou des commentaires !
-      </p>
-    </div>
-  </section>
-
-  <!-- FORMULAIRE DE CONTACT -->
-  <div class="container mt-5 mb-5">
-    <h2 class="mb-4">Contactez-nous</h2>
-
-    <!-- Formulaire avec validation Bootstrap 5 -->
-    <form class="row g-3 needs-validation" novalidate id="contactForm">
-      <!-- Nom complet -->
-      <div class="col-md-6">
-        <label for="name" class="form-label">Nom complet</label>
-        <input type="text" class="form-control" id="name" placeholder="Entrez votre nom complet" required>
-        <div class="invalid-feedback">Veuillez saisir votre nom complet.</div> <!-- Message d'erreur si vide -->
-      </div>
-
-      <!-- Adresse e-mail -->
-      <div class="col-md-6">
-        <label for="email" class="form-label">Adresse e-mail</label>
-        <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail" required>
-        <div class="invalid-feedback">Veuillez saisir une adresse @ valide.</div>
-        <!-- Message d'erreur si invalide -->
-      </div>
-
-      <!-- Numéro de téléphone -->
-      <div class="col-md-6">
-        <label for="phone" class="form-label">Numéro de téléphone</label>
-        <input type="tel" class="form-control" id="phone" placeholder="+32 XXX XXXXXXX" required>
-        <div class="invalid-feedback">Veuillez saisir un numéro de téléphone valide.</div>
-      </div>
-
-      <!-- Sujet -->
-      <div class="col-md-6">
-        <label for="topic" class="form-label">Sujet</label>
-        <select class="form-select" id="topic" required>
-          <option value="" disabled selected>Choisissez un sujet</option>
-          <option value="sales">Demande de renseignements commerciaux</option>
-          <option value="technical">Support technique</option>
-          <option value="service">Service / Maintenance</option>
-          <option value="dealer">Demande auprès d’un distributeur</option>
-          <option value="feedback">Retour d’expérience / Suggestions</option>
-          <option value="other">Autre</option>
-        </select>
-        <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
-      </div>
-
-      <!-- Modèle ATV (optionnel) -->
-      <div class="col-md-6">
-        <label for="model" class="form-label">ATV Model (optionnel)</label>
-        <select class="form-select" id="model">
-          <option value="">Sélectionnez un modèle</option>
-          <option value="general1000">RZR</option>
-          <option value="sport850">RANGER</option>
-          <option value="hunter570">GENERAL</option>
-          <option value="utility450">SPORTSMAN</option>
-          <option value="explorer700">ENFANTS</option>
-        </select>
-      </div>
-
-      <!-- Message -->
-      <div class="col-12">
-        <label for="message" class="form-label">Message</label>
-        <textarea class="form-control" id="message" rows="5" placeholder="Écrivez votre message ici…"
-          required></textarea>
-        <div class="invalid-feedback">Veuillez écrire votre message.</div>
-      </div>
-
-      <!-- Bouton Envoyer -->
-      <div class="col-12 d-flex justify-content-center mt-4">
-        <button type="submit" class="btn btn-primary btn-lg">
-          <i class="fa-solid fa-paper-plane me-2"></i> Envoyer le message
+        <!-- BUTTON BOURGER MENU -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
 
-      <!-- Message de succès -->
-      <div class="col-12 mt-3">
-        <div id="successMessage" class="alert alert-success d-none" role="alert">
-          Merci ! Votre message a été envoyé avec succès.
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- LIST MENU -->
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item dropdown">
+              <a class="nav-link me-4 " href="index.html">Accueil</a>
+            </li>
+            <!-- DROPDOWN ATVs -->
+            <li class="index.html">
+              <a class="nav-link me-4" href="#" id="dropdownATVs" role="button" aria-expanded="false">
+                <span class="dropdown-icon me-2">▼</span>
+                QUADS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownATVs">
+                <li>
+                  <a class="dropdown-item" href="#">RZR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ranger</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">General</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sportsman</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Enfants</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="atvs.html">Voir tout</a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="nav-item">
+              <a class="nav-link me-4" href="events.html">Événements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="about.html">À propos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link me-4 active" href="contact.html">Contactez-nous</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </form>
-  </div>
+    </nav>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section class="hero-bg" style="background-image: url('images/img_contact.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container text-center text-light">
+        <h1 class="mb-3">Contactez-nous</h1>
+        <p class="mb-4">
+          Des questions ? Contactez-nous pour des renseignements commerciaux, du
+          support ou des commentaires !
+        </p>
+      </div>
+    </section>
 
+    <!-- FORMULAIRE DE CONTACT -->
+    <div class="container mt-5 mb-5">
+      <h2 class="mb-4">Contactez-nous</h2>
+
+      <!-- Formulaire avec validation Bootstrap 5 -->
+      <form class="row g-3 needs-validation" novalidate id="contactForm">
+        <!-- Nom complet -->
+        <div class="col-md-6">
+          <label for="name" class="form-label">Nom complet</label>
+          <input type="text" class="form-control" id="name" placeholder="Entrez votre nom complet" required>
+          <div class="invalid-feedback">Veuillez saisir votre nom complet.</div> <!-- Message d'erreur si vide -->
+        </div>
+
+        <!-- Adresse e-mail -->
+        <div class="col-md-6">
+          <label for="email" class="form-label">Adresse e-mail</label>
+          <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail" required>
+          <div class="invalid-feedback">Veuillez saisir une adresse @ valide.</div>
+          <!-- Message d'erreur si invalide -->
+        </div>
+
+        <!-- Numéro de téléphone -->
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Numéro de téléphone</label>
+          <input type="tel" class="form-control" id="phone" placeholder="+32 XXX XXXXXXX" required>
+          <div class="invalid-feedback">Veuillez saisir un numéro de téléphone valide.</div>
+        </div>
+
+        <!-- Sujet -->
+        <div class="col-md-6">
+          <label for="topic" class="form-label">Sujet</label>
+          <select class="form-select" id="topic" required>
+            <option value="" disabled selected>Choisissez un sujet</option>
+            <option value="sales">Demande de renseignements commerciaux</option>
+            <option value="technical">Support technique</option>
+            <option value="service">Service / Maintenance</option>
+            <option value="dealer">Demande auprès d’un distributeur</option>
+            <option value="feedback">Retour d’expérience / Suggestions</option>
+            <option value="other">Autre</option>
+          </select>
+          <div class="invalid-feedback">Veuillez sélectionner un sujet.</div>
+        </div>
+
+        <!-- Modèle ATV (optionnel) -->
+        <div class="col-md-6">
+          <label for="model" class="form-label">ATV Model (optionnel)</label>
+          <select class="form-select" id="model">
+            <option value="">Sélectionnez un modèle</option>
+            <option value="general1000">RZR</option>
+            <option value="sport850">RANGER</option>
+            <option value="hunter570">GENERAL</option>
+            <option value="utility450">SPORTSMAN</option>
+            <option value="explorer700">ENFANTS</option>
+          </select>
+        </div>
+
+        <!-- Message -->
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control" id="message" rows="5" placeholder="Écrivez votre message ici…"
+            required></textarea>
+          <div class="invalid-feedback">Veuillez écrire votre message.</div>
+        </div>
+
+        <!-- Bouton Envoyer -->
+        <div class="col-12 d-flex justify-content-center mt-4">
+          <button type="submit" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-paper-plane me-2"></i> Envoyer le message
+          </button>
+        </div>
+
+        <!-- Message de succès -->
+        <div class="col-12 mt-3">
+          <div id="successMessage" class="alert alert-success d-none" role="alert">
+            Merci ! Votre message a été envoyé avec succès.
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
 
 
   <!-- FOOTER -->

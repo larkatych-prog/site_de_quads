@@ -15,186 +15,194 @@
 </head>
 
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-      <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="images/logo-polaris.svg" alt="Polaris" class="me-2 logo" />
-      </a>
+  <header>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="images/logo-polaris.svg" alt="Polaris" class="me-2 logo" />
+        </a>
 
-      <!-- BUTTON BOURGER MENU -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <!-- BUTTON BOURGER MENU -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="mainNavbar">
-        <!-- LIST MENU -->
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item">
-            <a class="nav-link me-4" href="index.html">Accueil</a>
-          </li>
-          <!-- DROPDOWN ATVs -->
-          <li class="nav-item dropdown">
-            <a class="nav-link me-4 " href="#" id="dropdownATVs" role="button" aria-expanded="false">
-              <span class="dropdown-icon me-2">▼</span>
-              QUADS
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownATVs">
-              <li>
-                <a class="dropdown-item" href="#">RZR</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Ranger</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">General</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Sportsman</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">Enfants</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="atvs.html">Voir tout</a>
-              </li>
-            </ul>
-          </li>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <!-- LIST MENU -->
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link me-4" href="index.html">Accueil</a>
+            </li>
+            <!-- DROPDOWN ATVs -->
+            <li class="nav-item dropdown">
+              <a class="nav-link me-4 " href="#" id="dropdownATVs" role="button" aria-expanded="false">
+                <span class="dropdown-icon me-2">▼</span>
+                QUADS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownATVs">
+                <li>
+                  <a class="dropdown-item" href="#">RZR</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Ranger</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">General</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Sportsman</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Enfants</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="atvs.html">Voir tout</a>
+                </li>
+              </ul>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link me-4 active" href="events.html">Événements</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link me-4" href="about.html">À propos</a>
-          </li>
+            <li class="nav-item">
+              <a class="nav-link me-4 active" href="events.html">Événements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="about.html">À propos</a>
+            </li>
 
-          <li class="nav-item">
-            <a class="nav-link me-4" href="contact.html">Contactez-nous</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link me-4" href="contact.html">Contactez-nous</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- HERO -->
+    <section class="hero-bg" style="background-image: url('images/evenement.jpg');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content container">
+        <h1 class="mb-3">Evénément en 2026</h1>
+        <p class="mb-4">Réservez dès maintenant votre voyage</p>
+
+      </div>
+    </section>
+
+    <!-- FILTER BUTTONS -->
+    <div class="container mt-5">
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <button class="btn btn-outline-primary event-btn">
+          Tous les événements
+        </button>
+        <button class="btn btn-outline-primary event-btn">
+          Événement Benelux.
+        </button>
+        <button class="btn btn-outline-primary event-btn">
+          Événement international
+        </button>
       </div>
     </div>
-  </nav>
-  <!-- HERO -->
-  <section class="hero-bg" style="background-image: url('images/evenement.jpg');">
-    <div class="hero-overlay"></div>
-    <div class="hero-content container">
-      <h1 class="mb-3">Evénément en 2026</h1>
-      <p class="mb-4">Réservez dès maintenant votre voyage</p>
-
-    </div>
-  </section>
-
-  <!-- FILTER BUTTONS -->
-  <div class="container mt-5">
-    <div class="d-flex justify-content-center gap-3 flex-wrap">
-      <button class="btn btn-outline-primary event-btn">
-        Tous les événements
-      </button>
-      <button class="btn btn-outline-primary event-btn">
-        Événement Benelux.
-      </button>
-      <button class="btn btn-outline-primary event-btn">
-        Événement international
-      </button>
-    </div>
-  </div>
-  <!-- ACCORDION -->
-  <div class="container mt-5 mb-5">
-    <div class="accordion custom-accordion" id="eventAccordion">
-      <!-- MARCH -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#march">
-            Mars 2026
-          </button>
-        </h2>
-        <div id="march" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
-          <div class="accordion-body">
-            <a href="voyage_hors_route.html" class="d-block">
-              Kuijers Quads/4WD Voyage hors route France — 15 mars (France).
-            </a>
-            <a href="rallye_de_montagne.html" class="d-block">
-              Rallye de montagne — 12 mars (Événement international).
-            </a>
+    <!-- ACCORDION -->
+    <div class="container mt-5 mb-5">
+      <div class="accordion custom-accordion" id="eventAccordion">
+        <!-- MARCH -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#march">
+              Mars 2026
+            </button>
+          </h2>
+          <div id="march" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+            <div class="accordion-body">
+              <a href="voyage_hors_route.html" class="d-block">
+                Kuijers Quads/4WD Voyage hors route France — 15 mars (France).
+              </a>
+              <a href="rallye_de_montagne.html" class="d-block">
+                Rallye de montagne — 12 mars (Événement international).
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- FEBRUARY -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#february">
-            Février 2026
-          </button>
-        </h2>
-        <div id="february" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
-          <div class="accordion-body">
-            <a href="#">
-              Balade printanière dans le désert — 15 février (International).
-            </a>
+        <!-- FEBRUARY -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#february">
+              Février 2026
+            </button>
+          </h2>
+          <div id="february" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+            <div class="accordion-body">
+              <a href="#">
+                Balade printanière dans le désert — 15 février (International).
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- JANUARY -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#january">
-            Janvier 2026
-          </button>
-        </h2>
-        <div id="january" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
-          <div class="accordion-body">
-            <a href="#"> Défi tout-terrain — 20 janvier. </a>
+        <!-- JANUARY -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#january">
+              Janvier 2026
+            </button>
+          </h2>
+          <div id="january" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+            <div class="accordion-body">
+              <a href="#"> Défi tout-terrain — 20 janvier. </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- DECEMBER -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#december">
-            Décembre 2025
-          </button>
-        </h2>
-        <div id="december" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
-          <div class="accordion-body">
-            <a href="#"> Balade en forêt du Benelux — 9 décembre </a>
+        <!-- DECEMBER -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#december">
+              Décembre 2025
+            </button>
+          </h2>
+          <div id="december" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+            <div class="accordion-body">
+              <a href="#"> Balade en forêt du Benelux — 9 décembre </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- NOVEMBER -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#november">
-            Novembre 2025
-          </button>
-        </h2>
-        <div id="november" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
-          <div class="accordion-body">
-            <a href="#"> Rallye de neige hivernal — 18 novembre </a>
+        <!-- NOVEMBER -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#november">
+              Novembre 2025
+            </button>
+          </h2>
+          <div id="november" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+            <div class="accordion-body">
+              <a href="#"> Rallye de neige hivernal — 18 novembre </a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- OCTOBER -->
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#october">
-            Octobre 2025
-          </button>
-        </h2>
-        <div id="october" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
-          <div class="accordion-body">
-            <a href="#"> Balade d’aventure du Nouvel An — 10 octobre </a>
+        <!-- OCTOBER -->
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#october">
+              Octobre 2025
+            </button>
+          </h2>
+          <div id="october" class="accordion-collapse collapse" data-bs-parent="#eventAccordion">
+            <div class="accordion-body">
+              <a href="#"> Balade d’aventure du Nouvel An — 10 octobre </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
+  </main>
   <!-- FOOTER -->
 
   <footer class="bg-dark text-light text-center py-4">
