@@ -99,29 +99,30 @@
       <form class="row g-3 needs-validation" novalidate id="contactForm">
         <!-- Nom complet -->
         <div class="col-md-6">
-          <label for="name" class="form-label">Nom complet</label>
+          <label for="name" class="form-label">Nom complet <span>*</span></label>
           <input type="text" class="form-control" id="name" placeholder="Entrez votre nom complet" required>
           <div class="invalid-feedback">Veuillez saisir votre nom complet.</div> <!-- Message d'erreur si vide -->
         </div>
 
         <!-- Adresse e-mail -->
         <div class="col-md-6">
-          <label for="email" class="form-label">Adresse e-mail</label>
-          <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail" required>
-          <div class="invalid-feedback">Veuillez saisir une adresse @ valide.</div>
+          <label for="email" class="form-label">Adresse e-mail <span>✉</span> <span>*</span></label>
+          <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail <span>@</span>"
+            required>
+          <div class="invalid-feedback">Veuillez saisir une adresse valide.</div>
           <!-- Message d'erreur si invalide -->
         </div>
 
         <!-- Numéro de téléphone -->
         <div class="col-md-6">
-          <label for="phone" class="form-label">Numéro de téléphone</label>
+          <label for="phone" class="form-label">Numéro de téléphone <span>*</span></label>
           <input type="tel" class="form-control" id="phone" placeholder="+32 XXX XXXXXXX" required>
           <div class="invalid-feedback">Veuillez saisir un numéro de téléphone valide.</div>
         </div>
 
         <!-- Sujet -->
         <div class="col-md-6">
-          <label for="topic" class="form-label">Sujet</label>
+          <label for="topic" class="form-label">Sujet <span>*</span></label>
           <select class="form-select" id="topic" required>
             <option value="" disabled selected>Choisissez un sujet</option>
             <option value="sales">Demande de renseignements commerciaux</option>
@@ -149,7 +150,7 @@
 
         <!-- Message -->
         <div class="col-12">
-          <label for="message" class="form-label">Message</label>
+          <label for="message" class="form-label">Message <span>*</span></label>
           <textarea class="form-control" id="message" rows="5" placeholder="Écrivez votre message ici…"
             required></textarea>
           <div class="invalid-feedback">Veuillez écrire votre message.</div>

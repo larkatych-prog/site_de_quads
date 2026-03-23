@@ -360,7 +360,7 @@ p {
   justify-content: center;
   color: #fff;
   opacity: 0.9;
-  transition: opacity 0.3s;
+  transition: opacity 0.4s;
   z-index: 10;
 }
 
