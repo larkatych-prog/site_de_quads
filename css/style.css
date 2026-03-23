@@ -430,11 +430,11 @@ p {
 
 /* PRODUCT CARD EFFECT */
 .product-card {
-    transition: 0.4s ease;
+    transition: 0.3s ease;
 }
 
 .product-card:hover {
-    transform: scale(1.05) rotate(1deg) translateY(-5px);
+    transform: scale(1.05) rotate(0deg) translateY(-5px);
 }
 
 /* BUTTON primary et secondary TRANSITION */
